@@ -10,8 +10,11 @@ const HeaderContainer = styled.header`
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: ${(props) => (props.isScrolled ? '0 2px 10px rgba(0, 0, 0, 0.1)' : '0 2px 10px rgba(0, 0, 0, 0.1)')};
+  box-shadow: ${(props) => (props.isScrolled ? '0 2px 10px rgba(0, 0, 0, 0.6)' : '0 2px 10px rgba(0, 0, 0, 0.5)')};
   transition: background 0.3s, box-shadow 0.3s;
+  @media (max-width: 768px){
+  background:white;
+  }
 `;
 
 const Nav = styled.nav`
@@ -60,11 +63,11 @@ const NavLinks = styled.div`
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    background:white;
     flex-direction: column;
     padding: 2rem;
     gap: 1.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.8);
   }
 `;
 
