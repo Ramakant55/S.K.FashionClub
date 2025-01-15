@@ -60,7 +60,7 @@ const NavLinks = styled.div`
     top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    background: transparent;
     flex-direction: column;
     padding: 2rem;
     gap: 1.5rem;
