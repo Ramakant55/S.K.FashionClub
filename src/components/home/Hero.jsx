@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const HeroContainer = styled.div`
   height: 100vh;
   width: 190%;
@@ -25,10 +25,10 @@ const Title = styled(motion.h1)`
   font-size: 4rem;
   margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
-
+  
   @media (max-width: 768px) {
-    font-size: 2.5rem;
     margin-top:250px;
+    font-size: 2.5rem;
   }
 `;
 
@@ -75,7 +75,8 @@ const Hero = () => {
         >
           Discover the latest trends in fashion and explore our new collection
         </Subtitle>
-        <ShopButton
+       <Link to="/shopnow">
+       <ShopButton
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
@@ -84,6 +85,7 @@ const Hero = () => {
         >
           Shop Now
         </ShopButton>
+       </Link>
       </HeroContent>
     </HeroContainer>
   );
