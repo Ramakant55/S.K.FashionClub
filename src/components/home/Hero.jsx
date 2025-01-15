@@ -28,7 +28,7 @@ const Title = styled(motion.h1)`
 
   @media (max-width: 768px) {
     font-size: 2.5rem;
-    margin-top:350px;
+    margin-top:250px;
   }
 `;
 
