@@ -32,6 +32,7 @@ const Logo = styled(Link)`
   color: ${(props) => (props.isScrolled ? '#000' : '#000')};
   text-decoration: none;
   transition: color 0.3s;
+   font-family: 'Playfair Display', serif;
   @media (max-width: 768px){
   font-size:1.5rem;
   }
@@ -43,10 +44,10 @@ const MenuButton = styled.button`
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+   font-family: 'Playfair Display', serif;
   padding: 0.5rem;
   color: ${(props) => (props.isScrolled ? '#000' : '#000')};
   transition: color 0.3s;
-
   @media (max-width: 768px) {
     display: block;
   }
@@ -56,7 +57,6 @@ const NavLinks = styled.div`
   display: flex;
   gap: 2rem;
   align-items: center;
-
   @media (max-width: 768px) {
     display: ${(props) => (props.isOpen ? 'flex' : 'none')};
     position: fixed;
