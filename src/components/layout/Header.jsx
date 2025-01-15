@@ -30,7 +30,7 @@ const Logo = styled(Link)`
   text-decoration: none;
   transition: color 0.3s;
   @media (max-width: 768px){
-  font-size:0.5rem;
+  font-size:1.5rem;
   }
 `;
 
@@ -60,7 +60,7 @@ const NavLinks = styled.div`
     top: 70px;
     left: 0;
     right: 0;
-    background: transparent;
+    background: white;
     flex-direction: column;
     padding: 2rem;
     gap: 1.5rem;
