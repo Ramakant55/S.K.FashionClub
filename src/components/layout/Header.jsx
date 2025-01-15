@@ -29,6 +29,9 @@ const Logo = styled(Link)`
   color: ${(props) => (props.isScrolled ? '#000' : '#000')};
   text-decoration: none;
   transition: color 0.3s;
+  @media (max-width: 768px){
+  font-size:1.5rem;
+  }
 `;
 
 const MenuButton = styled.button`
