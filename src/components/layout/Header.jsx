@@ -30,7 +30,7 @@ const Logo = styled(Link)`
   text-decoration: none;
   transition: color 0.3s;
   @media (max-width: 768px){
-  font-size:1.5rem;
+  font-size:0.5rem;
   }
 `;
 
