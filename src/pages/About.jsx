@@ -38,6 +38,9 @@ const Text = styled.p`
   color: #666;
   line-height: 1.8;
   margin-bottom: 1rem;
+  @media (max-width: 768px){
+  font-size:0.9rem;
+  }
 `;
 
 const ContactGrid = styled.div`
